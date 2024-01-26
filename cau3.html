@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>câu 3</title>
+</head>
+<body>
+<label for="nhapA">Nhập A: </label>
+<input type="text" id="nhapA">
+<label for="nhapb">Nhập B: </label>
+<input type="text" id="nhapB">
+<button onclick="kiemtra()">Tính </button>
+<p id="kiemttra"></p>
+</body>
+<script>
+    function kiemtra(){
+        let a= +document.getElementById("nhapA").value
+        let b= +document.getElementById("nhapB").value
+        let c=a*b
+        document.getElementById("kiemttra").innerHTML="Tích của a và b là: "+c
+    }
+</script>
+</html>

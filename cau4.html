@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>câu 4</title>
+</head>
+<body>
+<h3>
+    1.Chu vi, diện tích hình vuông
+</h3>
+<label for="canhA"> Nhập cạnh a:</label>
+<input type="text" id="canhA">
+<button onclick="tinh()">Tính CV, DT:</button>
+<p id="tinhcv,dt"></p>
+<br>
+<h3>2.Tính tích hai số</h3>
+<label for="nhapA"> Nhập a:</label>
+<input type="text" id="nhapA">
+<label for="nhapB"> Nhập b:</label>
+<input type="text" id="nhapB">
+<button onclick="tinh1()">Tính</button>
+<p id="tinh1"></p>
+<br>
+<h3>3.Tính tổng</h3>
+<label for="nhapsoa"> Nhập a:</label>
+<input type="text" id="nhapsoa">
+<label for="nhapsob"> Nhập b:</label>
+<input type="text" id="nhapsob">
+<button onclick="tinh2()">Tính</button>
+<p id="tinh2"></p>
+<br>
+<h3>4.Tính thế kỉ</h3>
+<label for="nam"> Nhập năm:</label>
+<input type="text" id="nam">
+<button onclick="tinh3()">Tính:</button>
+<p id="tinhtheki"></p>
+<br>
+<h3>5.Kiểm tra tam giác</h3>
+<label for="nhapcanhA"> Nhập a:</label>
+<input type="text" id="nhapcanhA">
+<label for="nhapcanhB"> Nhập b:</label>
+<input type="text" id="nhapcanhB">
+<label for="nhapcanhC"> Nhập b:</label>
+<input type="text" id="nhapcanhC">
+<button onclick="tinh4()">kiểm tra</button>
+<p id="tinh4"></p>
+
+</body>
+<script>
+    function tinh(){
+        let a1=+document.getElementById("canhA").value
+        let cv=a1*4
+        let dt=a*a
+        document.getElementById("tinhcv,dt").innerHTML="chu vi là: "+cv+"  diện tích là: "+dt
+    }
+    function tinh1(){
+        let a2=+document.getElementById("nhapA").value
+        let b2=+document.getElementById("nhapB").value
+        let bp= a2*a2
+        let tich=a2*b2
+        document.getElementById("tinh1").innerHTML="bình phương của a là: "+bp+" tích của hai số là: "+tich
+    }
+    function tinh2(){
+        let a3=+document.getElementById("nhapsoa").value
+        let b3=+document.getElementById("nhapsob").value
+        let c3=a3
+
+    }
+</script>
+</html>
